@@ -408,23 +408,23 @@
         margin-top: 100px;
         max-width: 100%;
 
-                .nav-link {
-                  @include text-style(400, 20px, 28px, 0%);
-                  padding: 8px 16px;
-                  border-radius: 10px;
-                  color: $black;
-                  transition: all 0.3s ease;
-                
-                  &.active {
-                    background-color: #CCE2D8;
-                    font-weight: 500;
-                    color: $black;
-                  }
-                
-                  &:hover {
-                    background-color: #b6d9cb;
-                  }
-                }
+            .nav-link {
+              @include text-style(400, 20px, 28px, 0%);
+              padding: 8px 16px;
+              border-radius: 10px;
+              color: $black;
+              transition: all 0.3s ease;
+            
+              &.active {
+                background-color: #CCE2D8;
+                font-weight: 500;
+                color: $black;
+              }
+            
+              &:hover {
+                background-color: #b6d9cb;
+              }
+            }
                             
         .management-row{
             margin-top: 20px;
@@ -436,7 +436,7 @@
                     width: 100%;
                 }
         }
-
+        
             .management-right{
                 max-width: 625px;
                 height: auto;
@@ -446,8 +446,7 @@
                 h2{
                     @include text-style(700, 48px, 60px,0%);
                     vertical-align: middle;
-                }
-
+                }   
                 p{
                     @include text-style(400, 20px, 28px,0%);
                     vertical-align: middle;
