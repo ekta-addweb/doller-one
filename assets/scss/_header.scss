@@ -3,6 +3,7 @@
   
     .navbar {
       padding: 16px 0;
+      margin: 0;
     }
   
     .navbar-nav {
@@ -51,6 +52,7 @@
       text-align: center;
       @include rounded(10px);
       @include text-style(500, 16px, 28px, 0%);
+      border: none;
     }
   
     @media (max-width: 768px) {
