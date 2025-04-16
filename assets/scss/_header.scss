@@ -46,13 +46,24 @@
         }
       }
     }
-  
+    
     .btn {
       padding: 12px 40px;
       text-align: center;
       @include rounded(10px);
       @include text-style(500, 16px, 28px, 0%);
       border: none;
+    }
+
+    .login-btn
+    {
+      background: $white;
+      color: $black;
+
+      &:hover{
+        background: $primary-green;
+        color: $white;
+      }
     }
   
     @media (max-width: 768px) {

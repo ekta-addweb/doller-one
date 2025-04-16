@@ -1,56 +1,78 @@
-// General Style
-*
-{
+// General Reset
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-body {
-
+  }
+  
+  // Body setup
+  body {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
 	-webkit-overflow-scrolling: touch;
 	background-color: $white;
-	// overflow-x: hidden;
-}
-/* COMMON DESIGN START */
-
-a {
+	overflow-x: hidden !important;
+	font-family: "DM Sans", sans-serif;
+	// background-color: aqua !important;
+  }
+  
+  // Links
+  a {
 	text-decoration: none;
 	transition: 0.5s all ease;
- 	&:hover {
- 	text-decoration: none;
-}
-}
-h1, h2, h3, h4, h5, h6, p, ul li {
+  
+	&:hover {
+	  text-decoration: none;
+	}
+  }
+  
+  // Typography reset
+  h1, h2, h3, h4, h5, h6,
+  p,
+  ul li {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-}
-ul {
+  }
+  
+  // Lists
+  ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-ol {
+  }
+  
+  ol {
 	margin: 0;
 	padding: 0;
- li {
- list-style-position: inside;
-}
-}
+  
+	li {
+	  list-style-position: inside;
+	}
+  }
+  
+  html{
+	overflow-x: hidden !important;
 
-/* COMMON DESIGN END */
-.container {
+  }
+  // Container
+  .container {
 	width: 100%;
 	margin: 0 auto;
 	max-width: 1536px;
-	font-family: "DM Sans", sans-serif;
-}
-
-img {
+	padding-left: 15px; 
+	padding-right: 15px;
+  }
+  
+  // Images
+  img {
 	max-width: 100%;
 	height: auto;
-}
+  }
+
+//   section{
+// 	border: 2px solid black;
+//   }
+  
