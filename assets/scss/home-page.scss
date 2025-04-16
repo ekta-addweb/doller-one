@@ -12,14 +12,12 @@
 		background: url('../../../assets/images/hero-circle.svg');
 		width: 705px;
 		height: 705px;
-		// border: 2px solid;
 		z-index: -1;
 	}
 	
 	.hero-col
 	{
-		// padding: 65px 0;
-		width: 522px;
+		flex: 1 1;
 	}
 	
 	h1{
@@ -73,6 +71,11 @@
     width: 660px;
     height: 913px;
     z-index: -1;
+
+    @media (max-width :769px)
+    {
+      opacity: 0;
+    }
 }
 
 .btn{
@@ -170,7 +173,7 @@
 
       .seo-img-col {
         width: 617px;
-        height: 382px;
+        min-height: 382px;
         position: relative;
         @include rounded(10px);
         background: linear-gradient(180deg, #B0FFC4 -3.71%, #47C972 72.14%);
@@ -179,6 +182,7 @@
         @media (max-width: 768px) {
           background: none;
           margin-left: 30px;
+          min-height: 0;
         }
 
         .seo-img {
@@ -188,7 +192,7 @@
           position: relative;
           top: 30px;
           left: -20px;
-          box-shadow: 0px 20px 40px 0px #00000026;
+          box-shadow: 0px 20px 40px 0px #00000026;  
         }
       }
 
@@ -260,7 +264,7 @@
         }
 
         @media (max-width: 768px) {
-          font-size: 16px;
+          font-size: 15px;
           line-height: 24px;
         }
       }
@@ -368,7 +372,7 @@
 .subscription {
   display: flex;
   justify-content: flex-end;
-  margin-top: 200px;
+  margin-top: 160px;
   margin-bottom: 80px;
 
   .sub-container {
@@ -393,6 +397,11 @@
 
     .sub-row {
       gap: 118px;
+
+      @media (max-width :550px)
+      {
+        gap: 40px;
+      }
     }
 
     .sub-col-left {
@@ -411,13 +420,15 @@
         max-width: 550px;
       }
 
-      @media (max-width:769px){
+      @media (max-width:550px){
         h2{
-            @include text-style(700, 40px, 50px, 0%);
+            @include text-style(700, 23px, 30px, 0%);
+            min-height: 0;
+            max-width: 100%;
         }
 
         .seo-title-text {
-          font-size: 40px;
+          font-size: 23px;
         }
      }
 
@@ -571,7 +582,7 @@
   {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   .sub-container{
@@ -630,8 +641,7 @@
 
 .management {
   text-align: center;
-  padding-top: 80px;
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: start;
   margin-bottom: 80px;
@@ -729,7 +739,8 @@
   position: relative;
 
   .client-title
-  {position: relative;
+  {
+    position: relative;
     &::after
     {
       content: "";
@@ -743,6 +754,10 @@
       z-index: 11;
       // border: 4px solid black;
 
+      @media (max-width: 550px)
+      {
+        opacity: 0;
+      }
     }
   }
   
@@ -752,10 +767,17 @@
 
         .seo-title-text{
           font-size: 64px;
+        }
 
-          @media (max-width: 769px)
+        @media (max-width: 769px)
+        {
+          .seo-title
           {
-            font-size: 30px;
+            margin-bottom: 10px;
+          }
+          .seo-title-text
+          {
+            font-size: 40px;
           }
         }
     }
@@ -989,6 +1011,11 @@
     background: rgba(255, 224, 198, 0.3);
     height: auto;
     @include rounded(10px);
+
+    @media (max-width: 550px)
+    {
+      margin-top: 30px;
+    }
   }
 
   .support-row {
@@ -1074,6 +1101,17 @@
 
       @media (max-width: 600px){
         padding-top: 30px;
+
+        p
+        {
+          @include text-style(700, 32px, 45px, 0%);
+        }
+
+        span
+        {
+        @include text-style(400, 17px, 28px, 0%);
+        }
+        
       }
     }
 
@@ -1100,6 +1138,53 @@
       }
     }
   }
+}
+
+@media (max-width: 550px)
+{
+
+  .hero-section
+  {
+    h1{
+      @include text-style(700, 30px, 45px,0%);
+    }
+  }
+
+  .company
+  {
+    padding: 30px 48px;
+    .company-col1
+    {
+      @include text-style(700, 17px, 28px,0%);
+    }
+  }
+
+  .subscription
+  {
+    margin-bottom: 0px;
+
+    .sub-row
+    {
+      gap: 40px;
+    }
+  }
+
+  .management
+  {
+    margin-bottom: 10px;
+  }
+  .seo-title-text
+  {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .pink-underline
+  {
+    opacity: 0;
+  }
+
 }
 
 
