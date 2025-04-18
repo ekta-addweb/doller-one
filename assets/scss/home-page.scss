@@ -4,6 +4,12 @@
 	padding-top: 61px;
 	padding-bottom: 80px;
 
+  @media (max-width: 550px)
+  {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -31,11 +37,37 @@
 	}
 
 	p{
-        @include text-style(500, 24px, 32px,0%);
+    @include text-style(500, 24px, 32px,0%);
 		vertical-align: middle;
 		margin-top: 24px;
 		color: $light-font-color;
 	}
+
+  @media (max-width: 1210px)
+  {
+    h1{
+      color: $primary-green;
+      @include text-style(700, 64px, 70px,0%);
+  
+    }
+    p{
+      @include text-style(500, 24px, 32px,0%);
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 375px)
+  {
+    h1{
+      color: $primary-green;
+      @include text-style(700, 64px, 50px,0%);
+  
+    }
+    p{
+      @include text-style(500, 15px, 20px,0%);
+      margin-top: 10px;
+    }
+  }
 
 
 	.hero-img{
@@ -77,15 +109,29 @@
       opacity: 0;
     }
 }
-
-.btn{
-	padding: 14px 32px;
-	margin-top: 40px;
+.btn {
+  padding: 14px 32px;
+  margin-top: 40px;
   margin-bottom: 20px;
-	background-color: $btn-background;
-	color: $white;
-  @include text-style(500, 16px, 24px,0%);
-	@include rounded(10px);
+  background-color: $btn-background;
+  color: $white;
+  @include text-style(500, 16px, 24px, 0%);
+  @include rounded(10px);
+
+
+  @media (min-width: 1210px) {
+    padding: 16px 36px;
+    @include text-style(500, 18px, 20px, 0%);
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 12px 24px;
+    @include text-style(500, 14px, 20px, 0%);
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -589,6 +635,11 @@
       .btn {
         margin-top: 48px;
         margin-left: 0;
+
+        @media (max-width: 900px)
+        {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -818,25 +869,26 @@
 
       @media (max-width: 550px)
       {
-        display: none;;
+        display: none;
       }
     }
   }
   
     .seo-title{
-      margin-bottom: 80px;
+      margin-bottom: 70px;
       text-align: center;
 
+      @media (max-width: 550px)
+      {
+        margin-bottom: 30px;
+      }
+      
         .seo-title-text{
           font-size: 64px;
         }
 
         @media (max-width: 769px)
         {
-          .seo-title
-          {
-            margin-bottom: 0px;
-          }
           .seo-title-text
           {
             font-size: 40px;

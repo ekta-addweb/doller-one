@@ -12352,6 +12352,12 @@ img {
   padding-top: 61px;
   padding-bottom: 80px;
 }
+@media (max-width: 550px) {
+  .hero-section {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
 .hero-section::before {
   content: "";
   position: absolute;
@@ -12384,6 +12390,38 @@ img {
   vertical-align: middle;
   margin-top: 24px;
   color: #4A4A4A;
+}
+@media (max-width: 1210px) {
+  .hero-section h1, .hero-section .h1 {
+    color: #255B2D;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: 0%;
+  }
+  .hero-section p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .hero-section h1, .hero-section .h1 {
+    color: #255B2D;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 50px;
+    letter-spacing: 0%;
+  }
+  .hero-section p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+  }
 }
 .hero-section .hero-img {
   position: relative;
@@ -12433,6 +12471,28 @@ img {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+}
+@media (min-width: 1210px) {
+  .btn {
+    padding: 16px 36px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .btn {
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 }
 
 /*company section style*/
@@ -12938,6 +12998,11 @@ img {
   margin-top: 48px;
   margin-left: 0;
 }
+@media (max-width: 900px) {
+  .subscription .sub-container .sub-col-right .btn {
+    margin-top: 0;
+  }
+}
 
 @media (max-width: 1400px) {
   .subscription {
@@ -13165,16 +13230,18 @@ img {
   }
 }
 .client .seo-title {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   text-align: center;
+}
+@media (max-width: 550px) {
+  .client .seo-title {
+    margin-bottom: 30px;
+  }
 }
 .client .seo-title .seo-title-text {
   font-size: 64px;
 }
 @media (max-width: 769px) {
-  .client .seo-title .seo-title {
-    margin-bottom: 0px;
-  }
   .client .seo-title .seo-title-text {
     font-size: 40px;
   }
