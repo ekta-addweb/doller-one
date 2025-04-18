@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Favicons -->
-      <link rel="icon" href="assets/images/dollor-logo.svg">
+      <link rel="icon" href="assets/images/favicon.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,6 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
    </head>
    <body>
-
     <!--header start-->
     <header class="header-main">
       <div class="container">
@@ -53,7 +52,7 @@
     
             <div class="d-flex flex-column flex-md-row gap-3">
               <button type="button" class="btn btn-success">Get Started</button>
-              <button type="button" class="btn btn-light">Login</button>
+              <button type="button" class="btn btn-light login-btn">Login</button>
             </div>
           </div>
         </nav>
@@ -124,17 +123,17 @@
                   <div class="seo-left">
                     <p class="seo-title-text">
                       SEO Dashboard
-                      <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
+                      <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline py-2">
                     </p>
                     <p class="seo-teg-line py-3">
                       Streamline Your SEO Efforts with Our Comprehensive Dashboard for Data-driven Insights and Optimization.
                     </p>
                     <ul class="seo-left-list">
                       <li>Keyword Tracking</li>
-                      <li>Backlink Analysis</li>
-                      <li>Reporting and Insights</li>
                       <li>Keyword Tracking</li>
                       <li>Backlink Analysis</li>
+                      <li>Backlink Analysis</li>
+                      <li>Reporting and Insights</li>
                       <li>Reporting and Insights</li>
                     </ul>
                     <button type="button" class="btn seo-btn">Get Started</button>
@@ -243,7 +242,7 @@
            <div class="sub-type sub-type-2 d-flex ">
               <img src="assets/images/sub-icon3.svg">
               <div class="sub-type-text">
-                 <p>Project Management</p>
+                 <p>Management</p>
                  <p>Time Tracking is never been easier.</p>
               </div>
            </div>
@@ -389,7 +388,7 @@
 
   <!--Client Testimonials start-->
   <section class="client">
-     <div class="seo-title">
+     <div class="seo-title client-title">
        <p class="seo-title-text">
          Client Testimonials
          <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
@@ -397,6 +396,7 @@
      </div>
           
     <div class="container">
+      <p class="before-text">TESTIMONIALS</p>
        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-row gap-5">
@@ -478,7 +478,7 @@
 <div class="container">
    <footer>
      <div class="footer-row d-flex flex-wrap">
-      <div class="footer-col">
+      <div class="footer-col col-12 col-sm-12 col-md-6 col-lg-2">
          <img src="assets/images/dollor-logo.svg" alt="logo">
          <p>Your Partner in Project Management Excellence</p>
          <ul class="">
@@ -488,7 +488,7 @@
            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
          </ul>
       </div>
-      <div class="footer-col">
+      <div class="footer-col col-12 col-sm-6 col-md-6 col-lg-2">
         <p class="seo-title-text">Quick links
            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
         </p>
@@ -503,7 +503,7 @@
         </ul>
       </div>
           
-      <div class="footer-col">
+      <div class="footer-col col-12 col-sm-6 col-md-6 col-lg-2">
         <p class="seo-title-text">Features
            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
         </p>
@@ -516,7 +516,7 @@
         </ul>
       </div>
           
-      <div class="footer-col f-col4">
+      <div class="footer-col f-col4 col-12 col-sm-6 col-md-6 col-lg-2">
         <p class="seo-title-text">Use cases
            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
         </p>
@@ -527,13 +527,14 @@
         </ul>
       </div>
           
-      <div class="footer-col f-col-5">
+      <div class="footer-col f-col-5 footer-col col-12 col-sm-12 col-md-6 col-lg-4">
         <form>
           <p class="seo-title-text">join our newsletter
+            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
            </p>
            <form>
             <div class="input-with-button">
-              <input id="newsletter1" type="email" placeholder="Email address">
+              <input id="newsletter1" type="email" placeholder="Enter your work email">
               <button type="submit" class="btn">Submit</button>
             </div>
           </form>
@@ -572,6 +573,30 @@
                 delay: 2500,
                 disableOnInteraction: false,
               },
+
+              breakpoints: {
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 0
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20
+                },
+                992: {
+                  slidesPerView: 4,
+                  spaceBetween: 40
+                },
+                1200: {
+                  slidesPerView: 5,
+                  spaceBetween: 50
+                },
+
+                1920: {
+                  slidesPerView: 6,
+                  spaceBetween: 50
+                }
+              }
             });
 
             /*seo swiper*/

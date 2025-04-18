@@ -21,13 +21,12 @@
     <!--header start-->
     <header class="header-main">
       <div class="container">
-        <nav class="navbar navbar-expand-md" aria-label="Main navigation">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
           <a href="/" class="navbar-brand">
             <img src="assets/images/dollor-logo.svg" alt="Dollar Website Logo" width="101" height="65" />
           </a>
     
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
           </button>
     
@@ -294,23 +293,26 @@
   <section class="management">
     <div class="management-container">
       <!-- Tab Navigation -->
-      <ul class="nav nav-tabs justify-content-center flex-wrap gap-3 py-5" id="projectTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="kanban-tab" data-bs-toggle="tab" href="#kanban" role="tab" aria-controls="kanban" aria-selected="true">Kanban View</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="timeline-tab" data-bs-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="false">Timeline Chart</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="calendar-tab" data-bs-toggle="tab" href="#calendar" role="tab" aria-controls="calendar" aria-selected="false">Calendar View</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="docs-tab" data-bs-toggle="tab" href="#docs" role="tab" aria-controls="docs" aria-selected="false">Docs & Sheet</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="team-tab" data-bs-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="false">Team Communication</a>
-        </li>
-      </ul>
+      <div class="tab-scroll-wrapper">
+        <ul class="nav nav-tabs flex-nowrap gap-3 py-3" id="projectTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="kanban-tab" data-bs-toggle="tab" href="#kanban" role="tab" aria-controls="kanban" aria-selected="true">Kanban View</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="timeline-tab" data-bs-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="false">Timeline Chart</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="calendar-tab" data-bs-toggle="tab" href="#calendar" role="tab" aria-controls="calendar" aria-selected="false">Calendar View</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="docs-tab" data-bs-toggle="tab" href="#docs" role="tab" aria-controls="docs" aria-selected="false">Docs & Sheet</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="team-tab" data-bs-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="false">Team Communication</a>
+          </li>
+        </ul>
+      </div>
+      
   
       <!-- Tab Content -->
       <div class="tab-content px-5 pb-5" id="projectTabContent">
@@ -480,7 +482,7 @@
 <div class="container">
    <footer>
      <div class="footer-row d-flex flex-wrap">
-      <div class="footer-col col-12 col-sm-12 col-md-6 col-lg-2">
+      <div class="footer-col f-col-1 col-12 col-sm-6 col-md-5 col-lg-2">
          <img src="assets/images/dollor-logo.svg" alt="logo">
          <p>Your Partner in Project Management Excellence</p>
          <ul class="">
@@ -490,7 +492,7 @@
            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
          </ul>
       </div>
-      <div class="footer-col col-12 col-sm-6 col-md-6 col-lg-2">
+      <div class="footer-col col-12 col-sm-6 col-md-5 col-lg-2">
         <p class="seo-title-text">Quick links
            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
         </p>
@@ -505,7 +507,7 @@
         </ul>
       </div>
           
-      <div class="footer-col col-12 col-sm-6 col-md-6 col-lg-2">
+      <div class="footer-col f-col-3 col-12 col-sm-6 col-md-5 col-lg-2">
         <p class="seo-title-text">Features
            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
         </p>
@@ -518,7 +520,7 @@
         </ul>
       </div>
           
-      <div class="footer-col f-col4 col-12 col-sm-6 col-md-6 col-lg-2">
+      <div class="footer-col f-col4 col-12 col-sm-6 col-md-5 col-lg-2">
         <p class="seo-title-text">Use cases
            <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">
         </p>
@@ -529,7 +531,7 @@
         </ul>
       </div>
           
-      <div class="footer-col f-col-5 footer-col col-12 col-sm-12 col-md-6 col-lg-4">
+      <div class="footer-col f-col-5 footer-col col-12 col-sm-12 col-md-5 col-lg-4">
         <form>
           <p class="seo-title-text">join our newsletter
             <img src="assets/images/Layer-of-seo-title.svg" class="pink-underline">

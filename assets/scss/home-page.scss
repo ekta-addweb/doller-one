@@ -127,6 +127,16 @@
   position: relative;
   @include square-after();
 
+  @media (max-width: 530px)
+  {
+    margin-top: 20px;
+
+    &::after
+    {
+      opacity: 0;
+    }
+  }
+
   .seo-title {
     padding: 80px 0;
     text-align: center;
@@ -170,6 +180,14 @@
     .seo-right {
       max-width: 100%;
       position: relative;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width:1500px)
+      {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       .seo-img-col {
         width: 617px;
@@ -609,10 +627,27 @@
   position: relative;
   @include square-after();
 
+  @media (max-width: 992px)
+  {
+    padding: 20px 20px;
+
+    &::after{
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 710px)
+  {
+    &::after{
+      opacity: 0;
+    }
+
+    padding: 0px 10px;
+  }
+
   .seo-title-text {
     font-size: 64px;
     line-height: 50px;
-
 
     @media (max-width: 992px) {
       font-size: 40px;
@@ -643,13 +678,18 @@
   text-align: center;
   padding-top: 30px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-bottom: 80px;
+
+  @media (max-width: 530px)
+  {
+    margin-bottom: 20px;
+  }
 
   .management-container {
     width: 100%;
     max-width: 1732px;
-    height: auto; // changed from fixed 710px
+    height: auto;
     background: rgba(239, 255, 232, 0.4);
     position: relative;
     z-index: 1;
@@ -668,11 +708,30 @@
       z-index: -1;
     }
 
-    .nav-tabs {
-      border-bottom: none !important;
+    .tab-scroll-wrapper {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 16px;
+      width: 100%;
+    
+      &::-webkit-scrollbar {
+        display: none; // optional to hide scrollbar
+      }
     }
-
-    .nav-link {
+    
+    .tab-scroll-wrapper .nav-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 16px;
+      min-width: max-content;
+      white-space: nowrap;
+    }
+    
+    
+    .tab-scroll-wrapper .nav-link {
+      white-space: nowrap;
       @include text-style(400, 20px, 28px, 0%);
       padding: 8px 16px;
       @include rounded(10px);
@@ -738,6 +797,11 @@
   padding: 80px 0;
   position: relative;
 
+  @media (max-width: 550px)
+  {
+    padding: 30px 0;
+  }
+
   .client-title
   {
     position: relative;
@@ -750,13 +814,11 @@
       background: url('../../../assets/images/right-side-square.svg') no-repeat;
       width: 372px;
       height: 380px;
-      // opacity: 30%;
       z-index: 11;
-      // border: 4px solid black;
 
       @media (max-width: 550px)
       {
-        opacity: 0;
+        display: none;;
       }
     }
   }
@@ -773,7 +835,7 @@
         {
           .seo-title
           {
-            margin-bottom: 10px;
+            margin-bottom: 0px;
           }
           .seo-title-text
           {
@@ -826,8 +888,6 @@
         border-bottom-right-radius: 60px;
       }
 
-
-
       @media (max-width: 1500px) {
         padding: 0;
 
@@ -851,7 +911,6 @@
       }
 
       .slide-left{
-        // flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 300px;
         text-align: center;
@@ -964,7 +1023,7 @@
         }
               
         @media (max-width: 768px) {
-          padding: 20px 10px;
+          padding:20px 10px;
           
           .seo-title-text {
             font-size: 2em;
